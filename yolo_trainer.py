@@ -9,7 +9,6 @@ if __name__ == '__main__':
     # print("Using:", device)
     # torch.cuda.set_device(device)
 
-    from roboflow import Roboflow
     rf = Roboflow(api_key="BS8zZk5oG44IuXWegBlr")
     project = rf.workspace("agrobotics").project("yolo_new-4z2qz")
     version = project.version(1)
